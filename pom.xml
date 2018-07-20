@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.drtrang</groupId>
+    <artifactId>bom</artifactId>
+    <version>1.3.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>bom</name>
+    <description>bill of materials</description>
+    <url>https://github.com/drtrang/bom</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <inceptionYear>2018</inceptionYear>
+
+    <organization>
+        <name>trang</name>
+        <url>http://blog.trang.space/</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>trang</id>
+            <name>trang</name>
+            <email>donghao.l@hotmail.com</email>
+            <timezone>+8</timezone>
+            <url>http://blog.trang.space/</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/drtrang/bom.git</connection>
+        <developerConnection>scm:git:git@github.com:drtrang/bom.git</developerConnection>
+        <url>https://github.com/drtrang/bom</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/drtrang/bom/issues</url>
+    </issueManagement>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>oss</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>oss</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <copiers.version>2.5.3</copiers.version>
+        <druid-spring-boot-starter.version>1.1.10</druid-spring-boot-starter.version>
+        <mybatis-generator-extension.version>0.0.4</mybatis-generator-extension.version>
+        <redisson-spring-boot-starter.version>1.2.4</redisson-spring-boot-starter.version>
+        <spring-boot-autoconfigure.version>1.1.5</spring-boot-autoconfigure.version>
+        <typehandlers-encrypt.version>1.1.1</typehandlers-encrypt.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.github.drtrang</groupId>
+                <artifactId>copiers</artifactId>
+                <version>${copiers.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.drtrang</groupId>
+                <artifactId>typehandlers-encrypt</artifactId>
+                <version>${typehandlers-encrypt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.drtrang</groupId>
+                <artifactId>mybatis-generator-extension</artifactId>
+                <version>${mybatis-generator-extension.version}</version>
+            </dependency>
+            <!-- spring-boot 1.x -->
+            <dependency>
+                <groupId>com.github.drtrang</groupId>
+                <artifactId>spring-boot-autoconfigure</artifactId>
+                <version>${spring-boot-autoconfigure.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.drtrang</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.drtrang</groupId>
+                <artifactId>druid-spring-boot-actuator-starter</artifactId>
+                <version>${druid-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.drtrang</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson-spring-boot-starter.version}</version>
+            </dependency>
+            <!-- spring-boot 2.x -->
+            <dependency>
+                <groupId>com.github.drtrang</groupId>
+                <artifactId>spring-boot2-autoconfigure</artifactId>
+                <version>${spring-boot-autoconfigure.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.drtrang</groupId>
+                <artifactId>druid-spring-boot2-starter</artifactId>
+                <version>${druid-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.drtrang</groupId>
+                <artifactId>druid-spring-boot2-actuator-starter</artifactId>
+                <version>${druid-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.drtrang</groupId>
+                <artifactId>redisson-spring-boot2-starter</artifactId>
+                <version>${redisson-spring-boot-starter.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
