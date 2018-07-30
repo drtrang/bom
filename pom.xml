@@ -5,7 +5,7 @@
 
     <groupId>com.github.drtrang</groupId>
     <artifactId>bom</artifactId>
-    <version>1.3.0</version>
+    <version>1.3.1</version>
     <packaging>pom</packaging>
 
     <name>bom</name>
@@ -69,10 +69,10 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <!-- 基础依赖 -->
         <copiers.version>2.5.3</copiers.version>
-        <druid-spring-boot-starter.version>1.1.10</druid-spring-boot-starter.version>
+        <druid-spring-boot-starter.version>1.1.10.1</druid-spring-boot-starter.version>
         <mybatis-generator-extension.version>0.0.4</mybatis-generator-extension.version>
-        <redisson-spring-boot-starter.version>1.2.5</redisson-spring-boot-starter.version>
-        <spring-boot-autoconfigure.version>1.1.6</spring-boot-autoconfigure.version>
+        <redisson-spring-boot-starter.version>1.2.6</redisson-spring-boot-starter.version>
+        <spring-boot-autoconfigure.version>1.1.7</spring-boot-autoconfigure.version>
         <typehandlers-encrypt.version>1.1.1</typehandlers-encrypt.version>
         <!-- Maven 插件 -->
         <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
